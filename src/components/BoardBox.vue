@@ -6,7 +6,6 @@
 
     <draggable
       v-model="list"
-      @change="log"
       group="people"
       item-key="id"
       class="draggable flex flex-col justify-start m-0 w-full"
@@ -46,14 +45,16 @@ const props = defineProps({
   },
 });
 
-const log = (event) => {
-  const { moved, added, removed } = event;
-  if (moved) console.log("moved", moved);
-  if (removed) {
-    console.log("!!removed", removed);
-  }
-  if (added) console.log("added", added, added.element);
-};
+// for testing draggable
+// @change="log"
+// const log = (event) => {
+//   const { moved, added, removed } = event;
+//   if (moved) console.log("moved", moved);
+//   if (removed) {
+//     console.log("!!removed", removed);
+//   }
+//   if (added) console.log("added", added, added.element);
+// };
 </script>
 
 <style></style>

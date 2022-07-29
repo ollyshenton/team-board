@@ -18,6 +18,7 @@ import { useStore } from "@/stores";
 import BoardBox from "@/components/BoardBox.vue";
 const store = useStore();
 
+// for testing draggable
 // const log = (event) => {
 // const { moved, added, removed } = event;
 // if (moved) console.log("moved", moved);
